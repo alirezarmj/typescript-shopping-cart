@@ -6,7 +6,7 @@ import { useCartContext } from '../context/CartContext'
 import { RxCross2 } from 'react-icons/rx'
 import CartItem from './CartItem'
 import { formatCurrency } from '../utilites/formatCurrency'
-import productItems from '../data/products.json'
+import productItems from '../data/products.json' 
 const Navbar = () => {
     const [nav, setNav] = useState(true)
     const { cartQty, cartItems } = useCartContext()
