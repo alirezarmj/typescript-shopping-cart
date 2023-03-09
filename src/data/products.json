@@ -5,26 +5,26 @@
   {
     "id": 1,
     "name": "Book",
-    "price": 100.15,
-    "imgUrl": "https://images.pexels.com/photos/2465877/pexels-photo-2465877.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "price": 100.15
+   
   },
   {
     "id": 2,
     "name": "Car",
-    "price": 2000,
-    "imgUrl": "https://images.pexels.com/photos/754595/pexels-photo-754595.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "price": 2000
+    
   },
   {
     "id": 3,
     "name": "Burger",
-    "price": 20.45,
-    "imgUrl": "https://images.pexels.com/photos/1552641/pexels-photo-1552641.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "price": 20.45
+  
   },
   {
     "id": 4,
     "name": "Laptop",
-    "price": 500,
-    "imgUrl": "https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "price": 500
+   
   }
 ]
 

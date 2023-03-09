@@ -4,18 +4,19 @@ import { formatCurrency } from "../utilites/formatCurrency"
 interface productProps {
     id: number,
     name: string,
-    imgUrl: string,
     price: number
 }
 
-const Product = ({ id, name, imgUrl, price }: productProps) => {
+const Product = ({ id, name, price }: productProps) => {
     const{getItemQty,addItem,removeItem,decreaseItem}=useCartContext()
+
+    const img:string=new URL(`../images/${id}.jpg`,import.meta.url).href
 
     let qty = getItemQty(id);
     return (
         // Card
         <div className="mx-auto w-full  flex flex-col bg-white pb-2 rounded-xl">
-            <img src={imgUrl} className="object-cover w-full h-[250px] md:max-h-[350px] rounded-t-xl" alt="/" />
+            <img src={img} className="object-cover w-full h-[250px] md:max-h-[350px] rounded-t-xl" alt={name} />
             <div className="flex justify-between items-center px-4 py-2">
                 <h2 className="font-bold text-xl">{name}</h2>
                 <span className="tex-sm">{formatCurrency(price)}</span>

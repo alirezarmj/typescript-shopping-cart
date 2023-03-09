@@ -12,12 +12,14 @@ const CartItem = ({ qty, id }: CartItemProps) => {
     const item = productItems.find(item => item.id === id)
     const totalItem = qty * item!.price
 
+    const img:string=new URL(`../images/${id}.jpg`,import.meta.url).href
+
 
     return (
         <div className='flex flex-col px-4 '>
             <div className='flex justify-between items-center '>
                 <div className='flex mb-4 items-center gap-2 h-full my-auto'>
-                    <img src={item?.imgUrl} className="max-h-[110px] max-w-[110px] object-cover " alt="/" />
+                    <img src={img} className="max-h-[110px] max-w-[110px] object-cover " alt={item?.name} />
                     <div>
                         <div className='flex'>
                             <p>  {item?.name}</p>
